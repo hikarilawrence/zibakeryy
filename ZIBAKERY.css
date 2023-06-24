@@ -446,6 +446,7 @@ footer {
     .history {
         padding: 18px 22px;
         font-size: 18px;
+        margin: 0 80px 50px 80px;
     }
     
     .mission h3 {
@@ -553,6 +554,7 @@ footer {
     .history {
         padding: 10px 20px;
         font-size: 12px;
+        margin: 0 40px 50px 40px;
     }
     
     .aboutus {
