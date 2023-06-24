@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <script src="https://kit.fontawesome.com/47f8a8dec5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ZIBAKERY.css">
+</head>
+<body>
+    <!--------------------------------------HEADER---------------------------------------->
+    <header>
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <ul class="links">
+                <li><a href="ZIBAKERY.html">HOME</a></li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li><a href="CONTACTUS.html">CONTACT US</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown">
+            <li><a href="ZIBAKERY.html">HOME</a></li>
+            <li><a href="ABOUTUS.html">ABOUT US</a></li>
+            <li><a href="CONTACTUS.html">CONTACT US</a></li>
+        </div>
+    </header>
+
+    <!------------------------------------CONTACT-US-CONTENT-------------------------------------->
+
+    <div class="contactus">
+        <div class="contactcontainer">
+            <h1>CONTACT US</h1>
+            <p>If interested, please send us a message.</p>
+            <div class="contbox">
+                <div class="contacts">
+                    <h3>SEND YOUR MESSAGE</h3>
+                    <form action="https://formspree.io/f/mlekqrgq" method="post">
+                        <div class="row">
+                            <div class="haha">
+                                <label>Name: </label>
+                                <input type="text" id="name" name="name"required>
+                            </div>
+                            <div class="haha">
+                                <label for="phone">Phone: </label>
+                                <input type="text" id="phone" name="phone" required>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="haha">
+                                <label>Email: </label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+    
+                        <label>MESSAGE: </label>
+                        <textarea rows="5" name="Message" required></textarea>
+                        
+                        <button type="submit" class="btn2">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------FOOTER-------------------------------------------------------->
+<footer>
+    <div class="footers">
+        <h4>'ZI BAKERY</h4>
+        <p>Delicious, soft, and fluffy breads.</p>
+        <ul class="socials">
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/Zi_Bakeryyyy?t=Fsjl9wXXB-7jAVAi0R8gGA&s=09"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/zi_bakeryy/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="zibakeryy@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div class="bot">
+        <p>Copyright &copy;2023 <span>'Zi Bakery</span>.</p>
+    </div>
+</footer>
+
+    <script>
+        const togglebutton = document.querySelector('.toggle_btn')
+        const togglebuttonicon = document.querySelector('.toggle_btn i')
+        const dropdownmenu = document.querySelector('.dropdown')
+
+        togglebutton.onclick = function(){
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+
+            togglebuttonicon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

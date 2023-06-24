@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'ZI BAKERY</title>
+    <script src="https://kit.fontawesome.com/47f8a8dec5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ZIBAKERY.css">
+</head>
+<body>
+
+        <!--------------------------------------HEADER---------------------------------------->
+        <header>
+            <div class="navbar">
+                <img src="logo.jpg" class="logo">
+                <ul class="links">
+                    <li><a href="ZIBAKERY.html">HOME</a></li>
+                    <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                    <li><a href="CONTACTUS.html">CONTACT US</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="ZIBAKERY.html">HOME</a></li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li><a href="CONTACTUS.html">CONTACT US</a></li>
+            </div>
+        </header>
+
+        <!------------------------------------HOMEPAGE-CONTENT-------------------------------------->
+        <div class="content">
+            <h1 class="intro"><span class="sp1">'Zi Bakery</span> serves delicious breads with unique<br>aromas derived from our secret recipe. </h1>
+            <div>
+                <button type="button" class="btn"><a href="EXPLORE.html">EXPLORE</a></button>
+            </div>
+            </div>
+
+        <script>
+            const togglebutton = document.querySelector('.toggle_btn')
+            const togglebuttonicon = document.querySelector('.toggle_btn i')
+            const dropdownmenu = document.querySelector('.dropdown')
+
+            togglebutton.onclick = function(){
+                dropdownmenu.classList.toggle('open')
+                const isOpen = dropdownmenu.classList.contains('open')
+
+                togglebuttonicon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+</body>
+</html>
